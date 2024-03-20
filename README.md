@@ -166,15 +166,19 @@ huggingface의 digit82/kobart-summarization.
 ### Modeling Process
 
 - _Write model train and test process with capture_
-- 다양한 모델과 하이퍼파라미터 튜닝을 진행하였으나, 성능향상이 미미함
+- 다양한 모델과 하이퍼파라미터 튜닝을 진행하였으나, 성능향상이 미미했습니다.
   ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/wanda01.png)
 
 ## 5. Result
 
 ### Leader Board
+- Public Leader Board  
+![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/public.png)
 
-- _Insert Leader Board Capture_
-- _Write rank and score_
+- Final Leader Board  
+![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/final.png)
+
+Public은 8위, Final은 7위로 마감했습니다. 
 
 ### Presentation
 
