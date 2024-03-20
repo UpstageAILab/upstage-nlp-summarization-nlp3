@@ -129,6 +129,7 @@ print("EDA:", result)
 result = aeda(ex_data, p=0.3, repetition=repetition)
 print("AEDA:", result)
 ```
+![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/eda_aeda.png)
 
 ## 4. Modeling
 
