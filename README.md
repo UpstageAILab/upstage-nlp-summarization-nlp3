@@ -151,6 +151,15 @@ def augment_text_data_with_BT(text,repetition):
     return "\n".join(result)
 ```
 
+- 불용어 제거
+  - 감탄사 제거
+  - 의성어, 의태어 제거
+  - 그 외 접속사, 부사 등 개인적으로 만든 불용어 리스트 사용
+
+- 특수문자 처리
+  - ‘!’, ‘!!’이나 ‘...’, ‘....’, ‘.....’ 같이 통일되지 않은 특수문자들 양식 통일
+  - 괄호 ( ), [ ] 안 내용 제거
+
 ## 4. Modeling
 
 ### Model description
@@ -162,6 +171,10 @@ Text Summarization에는 Machine Reading Comprehension과
 Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용했습니다.  
   
 huggingface의 digit82/kobart-summarization.
+
+- KoT5
+
+마찬가지로 Encoder-Decoder Model은 KoT5-summarization을 적용하려 했으나 batch size 문제를 해결하지 못해 최종 결과를 도출하지는 못했습니다.  
 
 ### Modeling Process
 
