@@ -79,6 +79,9 @@ e.g.
 
 ### Dataset overview
 
+![image](https://github.com/UpstageAILab/upstage-cv-classification-cv3/assets/data.png)
+
+
 모든 데이터는 .csv 형식으로 제공되고 있으며, 각각의 데이터 건수는 다음과 같습니다.
 dev는 validation 데이터이며, test는 public, hidden-test는 private test 데이터입니다.
 
