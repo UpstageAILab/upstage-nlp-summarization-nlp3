@@ -147,10 +147,6 @@ def augment_text_data_with_BT(text,repetition):
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
         print('예외가 발생했습니다.', e)                
 
-    # 번역 결과 출력
-    #print("원문: " , text)
-    #print("--"*100)
-    #print("증강문: " , "\n".join(result))
     return "\n".join(result)
 ```
 
