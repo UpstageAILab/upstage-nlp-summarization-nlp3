@@ -97,17 +97,47 @@ dev는 validation 데이터이며, test는 public, hidden-test는 private test �
 ### Data Processing
 
 - EasyDataAugmentation (EDA)
-- - RandomDeletion (RD)
+  - RandomDeletion (RD)
   - RandomInsertion (RI)
   - SynonymReplacement (SR)
   - RandomSwap (RS)
 - AEasierDataAugmentation (AEDA)
 
+```
+from koeda import AEasierDataAugmentation
+from koeda import EasyDataAugmentation
+
+eda = EasyDataAugmentation(
+              morpheme_analyzer = "Okt",
+              alpha_sr = 0.1,
+              alpha_ri = 0.1,
+              alpha_rs = 0.1,
+              prob_rd = 0.1
+            )
+
+repetition = 1
+
+aeda = AEasierDataAugmentation(
+        morpheme_analyzer="Okt", punctuations=[".", ",", "!", "?", ";", ":"]
+    )
+
+print("원문:", ex_data)
+# First, apply EDA
+result = eda(ex_data, repetition=repetition)
+print("EDA:", result)
+# Second, apply AEDA
+result = aeda(ex_data, p=0.3, repetition=repetition)
+print("AEDA:", result)
+```
+
 ## 4. Modeling
 
 ### Model descrition
 
-- _Write model information and why your select this model_
+![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/bart_model.png)
+
+Text Summarization에는 Machine Reading Comprehension과 Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용했습니다.  
+huggingface의 digit82/kobart-summarization.
 
 ### Modeling Process
 
