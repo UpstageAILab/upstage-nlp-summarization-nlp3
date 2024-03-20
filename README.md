@@ -117,6 +117,43 @@ print("AEDA:", result)
 ```
 ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/eda_aeda.png)
 
+### BT (Back Translation) 
+한글의 경우 EasyDataAugmentation 보다는 BT가 성능 향상이 좋음
+
+```
+from googletrans import Translator
+
+
+def augment_text_data_with_BT(text,repetition):
+    """입력된 문장에 대해서 BT를 통해 데이터 증강"""
+    # Translator 객체 생성
+    translator = Translator()
+    result = []
+
+    dialogue_list = text.split('\n')
+
+    try :
+
+        for dialogue in dialogue_list:
+            str_temp = dialogue.split(':')
+
+            # 번역 실행 (한국어 > 영어 > 한국어)
+            for i in range(repetition):
+                #print(str_temp[1])
+                translated = translator.translate(str_temp[1], src='ko', dest='en')
+                re_translated = translator.translate(translated.text, src='en', dest='ko')
+                result.append(str_temp[0] + ':' + re_translated.text)
+
+    except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
+        print('예외가 발생했습니다.', e)                
+
+    # 번역 결과 출력
+    #print("원문: " , text)
+    #print("--"*100)
+    #print("증강문: " , "\n".join(result))
+    return "\n".join(result)
+```
+
 ## 4. Modeling
 
 ### Model description
