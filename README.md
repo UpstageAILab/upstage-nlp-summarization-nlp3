@@ -129,6 +129,8 @@ huggingface의 digit82/kobart-summarization.
 ### Modeling Process
 
 - _Write model train and test process with capture_
+- 다양한 모델과 하이퍼파라미터 튜닝을 진행하였으나, 성능향상이 미미함
+  ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/wanda_01.png)
 
 ## 5. Result
 
