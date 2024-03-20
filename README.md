@@ -117,7 +117,7 @@ print("AEDA:", result)
 ```
 ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/eda_aeda.png)
 
-### BT (Back Translation) 
+- BT (Back Translation) 
 한글의 경우 EasyDataAugmentation 보다는 BT가 성능 향상이 좋음
 
 ```
