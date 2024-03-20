@@ -39,6 +39,9 @@
 - March 20, 2024 - Mentoring3
 - March 20, 2024 - Final submission deadline
 
+### Evaluation Metric
+![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/rouge01.png)
+
 ## 2. Components
 
 ### Directory
