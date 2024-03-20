@@ -151,4 +151,4 @@ huggingface의 digit82/kobart-summarization.
 ### Reference
 
 - [koEDA](https://github.com/toriving/KoEDA)
-- _Insert related reference_
+- [Huggingface Korean Summarization Models](https://huggingface.co/models?pipeline_tag=summarization&language=ko&sort=trending)
