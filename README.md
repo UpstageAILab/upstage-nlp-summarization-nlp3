@@ -136,7 +136,9 @@ print("AEDA:", result)
 
 ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/bart_model.png)
 
-Text Summarization에는 Machine Reading Comprehension과 Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용했습니다.  
+Text Summarization에는 Machine Reading Comprehension과  
+Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용했습니다.  
+  
 huggingface의 digit82/kobart-summarization.
 
 ### Modeling Process
