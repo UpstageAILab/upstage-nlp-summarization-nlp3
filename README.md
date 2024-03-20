@@ -82,7 +82,7 @@ e.g.
 ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/data.png)
 
 
-모든 데이터는 .csv 형식으로 제공되고 있으며, 각각의 데이터 건수는 다음과 같습니다.
+모든 데이터는 .csv 형식으로 제공되고 있으며, 각각의 데이터 건수는 다음과 같습니다.  
 dev는 validation 데이터이며, test는 public, hidden-test는 private test 데이터입니다.
 
 - train : 12457
@@ -96,7 +96,12 @@ dev는 validation 데이터이며, test는 public, hidden-test는 private test �
 
 ### Data Processing
 
-- _Describe data processing process (e.g. Data Labeling, Data Cleaning..)_
+- EasyDataAugmentation (EDA)
+- - RandomDeletion (RD)
+  - RandomInsertion (RI)
+  - SynonymReplacement (SR)
+  - RandomSwap (RS)
+- AEasierDataAugmentation (AEDA)
 
 ## 4. Modeling
 
