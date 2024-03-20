@@ -79,7 +79,7 @@ e.g.
 
 ### Dataset overview
 
-![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/assets/data.png)
+![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/data.png)
 
 
 모든 데이터는 .csv 형식으로 제공되고 있으며, 각각의 데이터 건수는 다음과 같습니다.
