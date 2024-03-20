@@ -116,7 +116,8 @@ print("AEDA:", result)
 
 ## 4. Modeling
 
-### Model descrition
+### Model description
+- KoBART  
 
 ![image](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/assets/bart_model.png)
 
