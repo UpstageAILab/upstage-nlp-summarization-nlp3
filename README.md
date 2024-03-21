@@ -195,7 +195,7 @@ Public은 8위, Final은 7위로 마감했습니다.
 
 ### Presentation
 
-- _Insert your presentaion file(pdf) link_
+- [NLP 경진대회 3조 발표자료](https://github.com/UpstageAILab/upstage-nlp-summarization-nlp3/blob/main/docs/3%EC%A1%B0_NLP%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf)
 
 ## etc
 
